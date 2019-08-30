@@ -1,24 +1,27 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <AddTask />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AddTask from "./components/AddTask";
+import Favourite from "./components/Favorite";
+import TasksList from "./components/TasksList";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    HelloWorld
+    AddTask,
+    Favourite,
+    TasksList
   }
-}
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
